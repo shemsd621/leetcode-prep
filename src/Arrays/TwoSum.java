@@ -68,7 +68,8 @@ public class TwoSum
             // checks if the hashmap already contains the key
             if (hashMap.containsKey(key))
             {
-                return new int[] {key, i};
+                // returns the index of the key and the index of the current number
+                return new int[] {hashMap.get(key), i};
             }
             // else adds the current number nums[i] and its index i to the hashmap
             // stores the numbers that's been processed
